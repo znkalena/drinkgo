@@ -1,0 +1,18 @@
+.conteiner-promo{
+    background-color: #f3EBE1;
+    
+}
+.slider__block{
+    height: 656px;
+    display: flex;
+    flex-direction: row;
+}
+.block__img{
+    width: 280px;
+    height: 280px;    
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.block__img-white{
+    background-image: url(../img/flatwhite.png);
+}

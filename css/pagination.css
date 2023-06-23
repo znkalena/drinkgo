@@ -1,0 +1,48 @@
+.catalog__pagination {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.pagination {
+}
+.pagination__btn {
+    display: flex;
+    padding: 15px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    background:#FFFFFF;
+    border: none;
+}
+.pagination__btn-left {
+}
+.pagination__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+.pagination__item {
+    display: flex;
+    width: 40px;
+    padding: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;    
+    border-radius: 4px;
+    background:#FFFFFF;
+}
+.pagination__link {
+    text-decoration: none;
+    color:#7859CF;
+    text-align: center;
+    font-size: 16px;
+    font-family: Montserrat;
+    line-height: 24px;
+}
+.pagination__link-active {
+    color:#333333;
+}
+.pagination__btn-right {
+}

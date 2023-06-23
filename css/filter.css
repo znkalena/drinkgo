@@ -1,14 +1,15 @@
 .catalog {
-    background-color: #E2E2E2;
+    background-color:#F8F8F8;
 }
 .catalog__title {
     margin-bottom: 20px;
 }
-
-.catalog__filter {
+.catalog__filter{
+    padding: 20px 17px 0 23px; 
+}
+.filter {
     display: flex;
-    flex-direction: column;
-    padding: 20px 17px 0 23px;
+    flex-direction: column;    
 }
 .fieldset {
     border: none;
@@ -27,7 +28,7 @@ margin-bottom: 20px;
 }
 .fieldset__range {
     width: 280px;
-    margin-bottom: 24px;
+    margin-bottom: 34px;
 }
 .fieldset__inputwrap{
     display:flex;
@@ -125,6 +126,7 @@ margin-bottom: 20px;
 .filter__btn {
     display: flex;
     width: 280px;
+    height: 40px;
     padding: 8px 20px;
     justify-content: center;
     align-items: center;
@@ -133,4 +135,85 @@ margin-bottom: 20px;
     border-radius: 4px;
     border: none;
     cursor: pointer;
+    color:#FFF;
+    text-align: center;
+    font-size: 16px;
+    font-family: Montserrat;
+    line-height: 24px;
 }
+.filter__btn-reset{
+    color: #7859CF;
+}
+
+    @media (min-width:768px) {
+        .catalog__filter{
+            padding: 0;
+        }
+        .filter {            
+            flex-direction: row;            
+        }       
+        .filter__fieldset{
+            flex-basis:33%;
+            gap: 30px;
+        }
+        .fieldset__range {
+            width: 223px;
+            margin-bottom: 20px;
+        }
+        .fieldset__inputwrap{            
+            gap: 20px;
+        }
+        .inputwrap__input{            
+            width: 87px;
+            padding: 8px 10px;
+            margin-bottom: 156px;
+        }       
+        
+        .fieldset-milk {            
+            margin-bottom: 84px;
+        }      
+        .fieldset-country {
+            margin-bottom: 40px;
+        }
+        .filter__btn {            
+            width: 137px;           
+            margin-bottom: 44px;            
+        }
+        .filter__btn-wrapper{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+    @media (min-width:1440px) {
+        .catalog__filter{                      
+            display: flex;
+            flex-direction: column;
+            width: 318px;
+            max-height: 714px;
+            float: left;
+        }
+        .filter{
+            display: flex;
+            flex-direction: column;
+            width: 100px;
+        }        
+        .catalog__title {
+            margin-bottom: 40px;
+        }
+        .fieldset__range {
+            width: 274px;
+        }
+        .filter__btn-wrapper{
+            justify-content: start;
+        }
+        .inputwrap__input{
+            margin-bottom: 30px;
+        }
+        .fieldset-milk {
+            margin-bottom: 30px;
+        }
+        .fieldset-country {
+            margin-bottom: 30px;
+        }
+    }

@@ -97,6 +97,7 @@ transform: scale(0);
     padding: 0;
 }
 .btn{
+    display: flex;
     border-radius: 4px;
     background:#7859CF;
     border: none;

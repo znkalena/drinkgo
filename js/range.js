@@ -15,19 +15,6 @@ if(rangeSlider){
     });
 
     rangeSlider.noUiSlider.on('update', (values, handle) =>{
-    inputs[handle].value = Math.round(values[handle]);
-    console.log(inputs[0].value)
+    inputs[handle].value = Math.round(values[handle]);    
     })
     };
-        /*format: {
-            to: function (value) {
-            if (Number.isInteger(value)) {
-                return value.toFixed(0);
-            }
-            return value.toFixed(1);
-            }
-            from: function (value) {
-            return parseFloat(value);
-            }
-        }*/
-

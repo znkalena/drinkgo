@@ -4,18 +4,9 @@
     gap: 20px;
 }
 .pagination {
+    margin-bottom: 44px;
 }
-.pagination__btn {
-    display: flex;
-    padding: 15px;
-    align-items: flex-start;
-    gap: 10px;
-    border-radius: 4px;
-    background:#FFFFFF;
-    border: none;
-}
-.pagination__btn-left {
-}
+
 .pagination__list {
     margin: 0;
     padding: 0;
@@ -33,6 +24,15 @@
     border-radius: 4px;
     background:#FFFFFF;
 }
+.pagination__item:hover,.pagination__item:focus{
+    background-color: #9070EC;    
+}
+.pagination__item:active{
+    background-color: #593CAC;    
+}
+.pagination__item:disabled{
+    background-color: #E2E2E2;    
+}
 .pagination__link {
     text-decoration: none;
     color:#7859CF;
@@ -44,5 +44,72 @@
 .pagination__link-active {
     color:#333333;
 }
+.pagination__btn {
+    display: flex;
+    padding: 15px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    background:#FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+.pagination__btn span{
+    display: none;
+}
+.pagination__btn-left {
+    background-image: url(../img/btn.left/Vector\ 4\ \(Stroke\).svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px;    
+}
+.pagination__btn:hover,.pagination__btn:focus{
+    background-color: #7859CF; 
+}
+.pagination__btn:active{
+    background-color:#593CAC;     
+}
 .pagination__btn-right {
+    background-image: url(../img/btn.right/Vector\ 4\ \(Stroke\).svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px;
+}
+.pagination__btn-disabled{
+    background-color: #E2E2E2;
+    background-image: url(../img/arrow-disable.svg);
+}
+
+
+@media (min-width:768px) {
+    .catalog__pagination {        
+        justify-content: end; 
+        margin-right: 20px;      
+    }
+    .pagination {
+        margin-bottom: 90px;
+    }    
+    .pagination__btn {       
+        padding: 8px 20px;
+        color:#7859CF;
+        text-align: center;
+        font-size: 16px;
+        font-family: Montserrat;
+        line-height: 24px;       
+    }
+    .pagination__btn span{
+        display: block;
+    }
+    .pagination__btn-left {
+        background-image:none ;  
+    }
+    .pagination__btn-right {
+        background-image: none;
+}
+}
+
+@media (min-width:1440px) {
+    .catalog__pagination {         
+        margin-right: 40px;      
+    }
 }

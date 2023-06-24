@@ -22,15 +22,15 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 0 20px;
-    margin-bottom: 16px;   
+    padding: 0 ;
+    margin:0 0 16px 0;   
 }
 .catalog__item {
     display: flex;
     flex-direction: column;    
 }
 .card {
-    padding: 40px 20px 20px;
+    padding-top: 40px;
 }
 .card__img {
     width: 130px;
@@ -75,8 +75,19 @@ color: #FFFFFF;
 font-size: 14px;
 font-family: Montserrat;
 line-height: 20px;
-margin-left: 50px;
+margin-left: 30px;
 }
+.card__btn:hover,.card__btn:focus{
+background-color: #9070EC;
+}
+.card__btn:active{
+    background-color: #593CAC;
+}
+.card__btn:disabled{
+    background-color: #BDBDBD;
+    }
+
+
 @media (min-width:768px) {
     .catalog__wrapper {
         margin-top: 0;

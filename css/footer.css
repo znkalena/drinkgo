@@ -14,9 +14,9 @@
 .nav__logo{
     width: 82px;
     height: 36px;    
-    @media (min-resolution: 2dppx) {
+    /*@media (min-resolution: 2dppx) {
         background-image: url(../img/logo-tablet@2x.png);
-    }
+    }*/
 }
 .social__list {
     margin: 0 0 29px;
@@ -51,7 +51,7 @@
     background-image: url(../img/ok-colored.svg);    
 }
 .social__link-pin{   
-    background-image: url(../img/union.svg);
+    background-image: url(../img/pinter.svg);
     background-repeat: no-repeat;
     background-size: 20px;
 }
@@ -138,11 +138,8 @@
 .copyrait__link:hover{
     color: #7859CF;
 }
-.copyrait__link:hover .svg__copyrait path{
-    fill: #7859CF;
-}
-.copyrait__link:active .svg__copyrait path{
-    fill: #593CAC;
+.copyrait__link:focus{
+    color: #7859CF;
 }
 .copyrait__link:active{
     color: #593CAC;
@@ -160,9 +157,9 @@
     .nav__logo{
         width: 170px;
         height: 36px;        
-        @media (min-resolution: 2dppx) {
+        /* @media (min-resolution: 2dppx) {
             background-image: url(../img/logo-desctop@2x.png);
-        }
+        }*/
     }   
     
     .footer__lists {
@@ -184,7 +181,7 @@
         max-width: 204px;
     }   
 }
-@media (min-width:1440px) {
+@media (min-width:1200px) {
     .conteiner__footer{
         display: flex;
         gap: 30px;        

@@ -93,7 +93,7 @@
         background-position: left top;
     }
 }
-@media (min-width:1440px) {
+@media (min-width:1200px) {
     .features__title{
         width:1360px;
         margin-bottom: 80px;
@@ -103,7 +103,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        gap: 30px;
+        gap: 0px;
     }
     .feature{        
         padding-top: 66px;

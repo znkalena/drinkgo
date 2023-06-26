@@ -25,15 +25,28 @@
 .user__link{
     text-decoration: none;
     color: #333333;
+    
 }
-.user__item:hover  .user__svg path{
-    fill: #7859CF;
+.user__icon{    
+    fill: #333333;    
 }
-.user__item:focus  .user__svg path{
-    fill: #7859CF;
+.user__btn{    
+    fill: #333333;    
 }
-.user__item:active .user__svg path{
-    fill:#7859CF ;
+.user__link:hover{
+    color: #9070EC;
+}
+.user__btn:hover,.user__btn:focus{
+    color: #9070EC;
+}
+.user__link:focus {
+    color: #9070EC;
+}
+.user__link:active {
+    color:#7859CF ;
+}
+.user__btn:active {
+    color:#7859CF ;
 }
 .user__item:active{
     background-color: #F0EBFF;
@@ -126,9 +139,9 @@
         margin: 22px 20px;
         width: 82px;
         height: 36px;      
-        @media (min-resolution: 2dppx) {
+        /*@media (min-resolution: 2dppx) {
             background-image: url(../img/logo-tablet@2x.png);
-        }
+        }*/
     }        
     .navigation{
         display: block;
@@ -151,14 +164,14 @@
         display: none;
     }
 }
-@media (min-width:1440px) {
+@media (min-width:1200px) {
     .header__logo{
         margin: 22px 20px;
         width: 170px;
         height: 36px;     
-        @media (min-resolution: 2dppx) {
+       /* @media (min-resolution: 2dppx) {
             background-image: url(../img/logo-desctop@2x.png);
-        }
+        }*/
     }    
     .header__span{
         display: block;

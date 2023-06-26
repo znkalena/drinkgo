@@ -9,7 +9,6 @@
     margin-bottom: 50px;    
     height: 656px;    
 }
-
 .slider__button{       
     background-color: transparent;
     border: none;
@@ -69,11 +68,9 @@
     gap: 10px;
     border:1px solid #7859CF ;
     color:#333;
-    font-size: 20px;
-    font-family: Montserrat;
+    font-size: 20px;    
     font-weight: 600;
-    line-height: 32px;
-        
+    line-height: 32px;        
 }
 .price__span-old{
     color:#7859CF;
@@ -151,7 +148,7 @@
         padding: 0;       
     }   
 }
-@media (min-width:1440px) {
+@media (min-width:1200px) {
     .promo__conteiner{    
         margin-bottom: 100px;    
         height: 714px;    

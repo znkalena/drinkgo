@@ -13,8 +13,10 @@
 }
 .nav__logo{
     width: 82px;
-    background-image: url(../img/logo-footmob.png);
-    background-repeat: no-repeat;
+    height: 36px;    
+    @media (min-resolution: 2dppx) {
+        background-image: url(../img/logo-tablet@2x.png);
+    }
 }
 .social__list {
     margin: 0 0 29px;
@@ -67,8 +69,7 @@
     margin-bottom: 20px;
 }
 .footerlist{
-    border-bottom: 1px dashed #F0EBFF;
-        
+    border-bottom: 1px dashed #F0EBFF;        
 }
 .footerlist__title{
     color:#7859CF;
@@ -93,6 +94,12 @@
     text-transform: uppercase;
     text-decoration: none;
 }
+.footerlist__link:hover,.footerlist__link:focus{
+    color:#9070EC ;
+}
+.footerlist__link:active{
+    color: #593CAC;
+}
 .footerlist__item-adress{    
     padding-left: 20px;
     background-image: url(../img/address.svg);
@@ -110,14 +117,14 @@
 .footer__copyrait {
     display: flex;
     gap: 3px;
+    justify-content: center;
     margin-bottom: 30px;
 }
 .copyrait__text {
     color: #BDBDBD;
     font-size: 12px;
     line-height: 16px;
-    margin: 0 0 0 37px;
-    
+    margin: 0;    
 }
 .copyrait__link {
     text-decoration: none;
@@ -126,7 +133,7 @@
     line-height: 16px;
     display: inline-flex;
     align-items: flex-start;
-    gap: 4px;    
+    gap: 4px;      
 }
 .copyrait__link:hover{
     color: #7859CF;
@@ -152,9 +159,10 @@
     }
     .nav__logo{
         width: 170px;
-        height: 36px;
-        background-image: url(../img/logo-foottab.png);
-        background-repeat: no-repeat;
+        height: 36px;        
+        @media (min-resolution: 2dppx) {
+            background-image: url(../img/logo-desctop@2x.png);
+        }
     }   
     
     .footer__lists {
@@ -188,10 +196,7 @@
     .nav__logo{       
         padding-top: 66px;        
     }   
-    .logo{
-        width: 170px;
-        background-image: url(../img/Logo-footer1.png);
-    }
+    
     .footer__lists {             
         margin-bottom: 20px;
         flex-grow: 1;

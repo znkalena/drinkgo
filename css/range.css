@@ -1,5 +1,5 @@
 .noUi-target{
-    background-color:#9070EC;
+    background-color:#BDBDBD;
     border:none;
     border-radius: 100px;
     box-shadow: none;
@@ -20,8 +20,30 @@
 }
 .noUi-handle {
     border: 2px solid #9070EC;
-    background:#FFFFFF;    
+    background-color:#FFFFFF;    
     border-radius: 100%;    
     cursor: default;
-    box-shadow:none;    
+    box-shadow:none;
+    cursor: pointer;    
     }
+.noUi-handle:hover,.noUi-handle:focus {
+    background-color: rgba(120, 89, 207, 0.25);
+    opacity: 0.25;
+}
+.noUi-handle:active{
+    background-color: #7859CF;
+    opacity: 1;
+}
+.noUi-connect:disabled{
+    background-color:#BDBDBD ;
+}
+.noUi-target:disabled{
+    background-color:#BDBDBD ;
+}
+.noUi-handle:disabled{
+    background-color:#FFFFFF;
+    border: 1px solid #F8F8F8;
+}
+.noUi-handle:default{
+    background-color: #FFFFFF;
+}

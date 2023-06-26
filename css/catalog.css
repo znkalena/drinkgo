@@ -6,7 +6,7 @@
     font-family: Montserrat;
     font-weight: 600;
     line-height: 24px;
-    margin-left: 23px;
+    margin-left: 10%;    
 }
 .catalog__wrapper select{
     color:#7859CF;
@@ -15,8 +15,24 @@
     font-family: Montserrat;
     font-weight: 600;
     line-height: 24px;
+    border: none;   
+}
+.catalog__wrapper select:hover,.catalog__wrapper:focus{
+    background-color: #F0EBFF;
+}
+.catalog__wrapper option{
+    background-color: #FFFFFF;
     border: none;
-    margin-left: 18px;
+    color: #333333;
+}
+.catalog__wrapper option:hover{
+    background-color: #7859CF;
+    border: none;
+    color: #333333;
+}
+.catalog__wrapper select:active{
+    background-color: #7859CF;
+    
 }
 .catalog__list {
     display: flex;
@@ -35,50 +51,50 @@
 .card__img {
     width: 130px;
     height: 188px;
-    margin:0 75px 24px;
+    margin:0 auto 24px;
 }
 .card__title {
     font-size: 18px;
     font-weight: 700;
     line-height: 32px;
-    margin:0 20px 4px 20px;
+    margin:0 auto 4px;
 }
 .card__discription {
     width: 240px;
     font-size: 14px;
     line-height: 20px;
-    margin:0 20px 18px 20px;
+    margin:0 auto 16px;
 }
 .card__span{
     display: flex;
     width: 51px;
     height: 32px;
-    align-items: flex-start;
+    text-align: center;
     gap: 10px;
     flex-shrink: 0;
     font-size: 20px;
     font-family: Montserrat;
     font-weight: 600;
     line-height: 32px;
-    margin-left:20px;
+    margin-left:20%;
 }
 .card__btn {    
-width: 141px;
-height: 36px;
-padding: 8px 20px;
-justify-content: center;
-align-items: center;
-gap: 6px;
-flex-shrink: 0;
-border-radius: 4px;
-color: #FFFFFF;
-font-size: 14px;
-font-family: Montserrat;
-line-height: 20px;
-margin-left: 30px;
+    width: 141px;
+    height: 36px;
+    padding: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: Montserrat;
+    line-height: 20px;
+    margin-left: 30px;
 }
 .card__btn:hover,.card__btn:focus{
-background-color: #9070EC;
+    background-color: #9070EC;
 }
 .card__btn:active{
     background-color: #593CAC;

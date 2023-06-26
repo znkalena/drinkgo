@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="./libers/nouislider.min.css">
     <!--leaflet-->
     <link rel="stylesheet" href="/leaflet/leaflet/leaflet.css">
+    <!--swiper-->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+
     <!--style.css-->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
@@ -23,21 +30,29 @@
     <link rel="stylesheet" href="./css/map.css">
     <link rel="stylesheet" href="./css/footer.css">
     <!--Leaflet-->
-    <script src="/leaflet/leaflet/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>    
+    <script src="/leaflet/leaflet/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    
     <!--js modules-->
     <script src="./js/script.js" type="module"></script>
     <script src="./js/range.js" type="module"></script>
     <script src="./js/pagination.js" type="module"></script>
     <script src="./js/map.js" type="module"></script>
-    
+        
     
 </head>
 <body>
         
     <header class="header">
         <div class="header__conteiner conteiner">
-            <div class="header__logo"></div>
+            <a class="header__logo">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="./img/logo-desktop.png" width="170">
+                    <source media="(min-width: 768px)" srcset="./img/logo-tablet.png" width="82">
+                    <img src="img/logo-mobil.png" width="32" height="36" alt="логотип drink2go">
+                </picture>               
+            </a>
             <span class="header__span">Интернет-магазин
                 кофейных напитков</span>
                 <nav class="header__nav navigation">
@@ -60,7 +75,7 @@
                     <ul class="user__list">
                         <li class="user__item">
                             <a class="user__link" href="#">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="user__svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6667 4C10.6667 5.47276 9.47276 6.66667 8 6.66667C6.52724 6.66667 5.33333 5.47276 5.33333 4C5.33333 2.52724 6.52724 1.33333 8 1.33333C9.47276 1.33333 10.6667 2.52724 10.6667 4ZM12 4C12 6.20914 10.2091 8 8 8C5.79086 8 4 6.20914 4 4C4 1.79086 5.79086 0 8 0C10.2091 0 12 1.79086 12 4ZM3.19673 12.3102C4.43611 11.2774 6.1613 10.6667 8 10.6667C9.8387 10.6667 11.5639 11.2774 12.8033 12.3102C14.0354 13.337 14.6667 14.6719 14.6667 16H16C16 14.2321 15.1573 12.5363 13.6569 11.286C12.1566 10.0357 10.1218 9.33333 8 9.33333C5.87821 9.33333 3.8434 10.0357 2.34315 11.286C0.842686 12.5363 0 14.2321 0 16L1.33333 16C1.33333 14.6719 1.96465 13.337 3.19673 12.3102Z" fill="#333333"/>
                                 </svg>
                                 <span class="user__span">Войти</span> 
@@ -68,7 +83,7 @@
                         </li>
                         <li class="user__item">
                             <a class="user__link" href="#">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="user__svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M5.66091 3.87546L5.89351 6.66667H10.1065L10.3391 3.87546C10.4531 2.50699 9.37321 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546ZM11.4444 6.66667L11.6678 3.98618C11.8466 1.84036 10.1533 0 8 0C5.84674 0 4.15336 1.84036 4.33218 3.98618L4.55556 6.66667H1.34687H0L0.190476 8L1.00626 13.7105C1.19393 15.0242 2.31905 16 3.64612 16H12.3539C13.6809 16 14.8061 15.0242 14.9937 13.7105L15.8095 8L16 6.66667H14.6531H11.4444ZM11.3333 8H11.2801L11.0579 10.6667H14.0817L14.4627 8H11.3333ZM9.94213 8H6.05787L6.28009 10.6667H9.71991L9.94213 8ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM10.9468 12L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219L13.8912 12H10.9468ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324Z" fill="#333333"/>
                                 </svg>
                                 <span class="user__span">Корзина</span> 
@@ -80,7 +95,7 @@
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V1.5H0V0ZM0 5.25H16V6.75H0V5.25ZM16 10.5H0V12H16V10.5Z" fill="#333333"/>
                         </svg>
                     </button>
-                    <button class="user__btn user__btn-close visually-hidden">
+                    <button class="user__btn user__btn-close ">
                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M5.02548 6L0 0.974524L0.974524 0L6 5.02548L11.0255 0L12 0.974524L6.97452 6L12 11.0255L11.0255 12L6 6.97452L0.974524 12L0 11.0255L5.02548 6Z" fill="#333333"/>
                         </svg>
@@ -88,68 +103,75 @@
                 </nav>
             </div>        
     </header>
-
     <main>  
         <section class="promo" id="promo">
-            <div class="conteiner conteiner-promo">
+            <div class="promo__conteiner">
                 <h1 class="promo__title visually-hidden">Выбери лучший кофе с собой на сайте Drink2Go</h1>
-                <div class="promo__slider slider">
-                    <button type="button" class="slider__button slider__button-left">
-                        <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.71661 0L11 1.32082L2.56677 10L11 18.6792L9.71661 20L0 10L9.71661 0Z" fill="#7859CF"/>
-                            </svg>
-                    </button>
-                    <div class="slider__block block block-white">
-                        <div class="block__img block__img-white"></div>
-                        <div class="block__content">
-                            <h2 class="block__title"><span class="block__span badge">Новинка!</span>Декаф Флэт Уайт</h2>
-                            <p class="block__description">Свежесваренный кофе без кофеина из Эфиопии с 
-                                натуральным фермерским молоком — то, что нужно для расслабления после
-                                тяжёлого рабочего дня
-                            </p>
-                            <div class="block__price price">
-                                <span class="price__span">295₽</span>
-                                <span class="price__span">225₽</span>
-                                <button class="price__btn btn" aria-label="заказать">Заказать</button>
-                            </div>
-                        </div>
+                    <div class="promo__slider swiper">                         
+                        <div class="swiper-wrapper">                                                                                 
+                            <div class="swiper-slide">                                
+                                <div class="slider__block">
+                                    <div class="block__img block__img-white" id="white">                                    
+                                    </div>
+                                    <div class="block__content">
+                                        <h2 class="block__title"><span class="block__span badge">Новинка!</span>Декаф Флэт Уайт</h2>
+                                        <p class="block__description">Свежесваренный кофе без кофеина из Эфиопии с 
+                                        натуральным фермерским молоком — то, что нужно для расслабления после
+                                        тяжёлого рабочего дня
+                                        </p>
+                                        <div class="block__price price">
+                                            <span class="price__span price__span-old">295₽</span>
+                                            <span class="price__span">225₽</span>
+                                            <button class="price__btn btn" aria-label="заказать">Заказать</button>
+                                        </div>
+                                    </div>  
+                                </div>                         
+                            </div> 
+                            <div class="swiper-slide">
+                                <div class=" slider__block">
+                                    <div class="block__img block__img-lavande" id="lavande">                                    
+                                    </div>
+                                    <div class="block__content">
+                                        <h2 class="block__title"><span class="block__span badge">Новинка!</span>Лавандовый Латте</h2>
+                                        <p class="block__description">Невероятное сочетание перуанской высокогорной арабики 
+                                            с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
+                                        </p>
+                                        <div class="block__price price">
+                                            <span class="price__span price__span-old">285₽</span>
+                                            <span class="price__span">265₽</span>
+                                            <button class="price__btn btn" aria-label="заказать">Заказать</button>
+                                        </div>
+                                    </div>  
+                                </div>                         
+                            </div>                              
+                            <div class="swiper-slide">
+                                <div class="slider__block">
+                                    <div class="block__img block__img-espresso" id="espresso">                                    
+                                    </div>
+                                    <div class="block__content">
+                                        <h2 class="block__title"><span class="block__span badge">Новинка!</span>Тройной Эспрессо</h2>
+                                        <p class="block__description">Мощнее укола адреналина, чернее самой тёмной ночи,
+                                            этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
+                                        </p>
+                                        <div class="block__price price">
+                                            <span class="price__span price__span-old">395₽</span>
+                                            <span class="price__span">375₽</span>
+                                            <button class="price__btn btn" aria-label="заказать">Заказать</button>
+                                        </div>                                    
+                                    </div>  
+                                </div>                         
+                            </div>                           
+                        </div> 
+                        <button type="button" class="slider__button slider__button-left swiper-button-prev">                                
+                        </button>
+                        <button type="button" class="slider__button slider__button-right swiper-button-next">                                
+                        </button>                        
+                            <ul class="slider__pagination pagin__list">
+                                <li class="pagin__item pagin__item-active"><a href="#" class="pagin__link"></a></li>
+                                <li class="pagin__item"><a href="#lavande" class="pagin__link"></a></li>
+                                <li class="pagin__item"><a href="#espresso" class="pagin__link"></a></li>
+                            </ul>                                                                                    
                     </div>
-                    <div class="slider__block block block-lavande ">
-                        <div class="block__img block__img-lavande"></div>
-                        <div class="block__content">
-                            <h2 class="block__title">
-                            <span class="block__span">Новинка!</span>Лавандовый Латте</h2>
-                            <p class="block__description">Невероятное сочетание перуанской высокогорной арабики 
-                                с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
-                            </p>
-                            <div class="block__price price">
-                                <span class="price__span">285₽</span>
-                                <span class="price__span">265₽</span>
-                                <button class="price__btn btn" aria-label="заказать">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider__block block block-espresso ">
-                        <div class="block__img block__img-espresso"></div>
-                        <div class="block__content">
-                            <h2 class="block__title">
-                            <span class="block__span">Новинка!</span>Тройной Эспрессо</h2>
-                            <p class="block__description">Мощнее укола адреналина, чернее самой тёмной ночи,
-                                    этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
-                            </p>
-                            <div class="block__price price">
-                                <span class="price__span">395₽</span>
-                                <span class="price__span">375₽</span>
-                                <button class="price__btn" aria-label="заказать">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <button type="button" class="slider__button slider__button-right">
-                        <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.28339 0L2.1942e-07 1.32082L8.43323 10L2.1942e-07 18.6792L1.28339 20L11 10L1.28339 0Z" fill="#7859CF"/>
-                        </svg>
-                    </button>
-                </div>
             </div>
         </section>
         <section class="features">
@@ -177,7 +199,8 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section>        
+
         <section class="catalog">
             <h2 class="catalog__badge badge">Каталог</h2>
             <p class="catalog__title title">Каталог кофейных напитков</p>
@@ -229,7 +252,7 @@
                                 <span class="checkbox__label">Колумбия</span>
                             </label>
                             <label class="fieldset__label checkbox">
-                                <input type="checkbox" id="costa" class="checkbox__input" name="rican">
+                                <input type="checkbox" id="costa" class="checkbox__input" name="costarica">
                                 <span class="checkbox__label">Коста-Рика</span>
                             </label>
                             <label class="fieldset__label checkbox">
@@ -239,7 +262,7 @@
                         </fieldset>
                     </div>
                     <div class="filter__btn-wrapper">
-                        <button class="filter__btn btn" type="submit" aria-label="применить фильтр">Применить</button>
+                        <button class="filter__btn filter__btn-submit btn" type="submit" aria-label="применить фильтр">Применить</button>
                         <button class="filter__btn filter__btn-reset" type="reset" aria-label="сбросить фильтр">Сбросить</button>                        
                     </div>
                     </form>
@@ -247,6 +270,9 @@
                         <label>Сортировка:</label>
                             <select>
                                 <option value="value1" selected>по умолчанию</option>
+                                <option value="value2">сначала дорогие</option>
+                                <option value="value3">сначала дешёвые</option>
+                                <option value="value4">высокий рейтинг</option>
                             </select>
                         <ul class="catalog__list" id="catalog">
                             <li class="catalog__item card">
@@ -355,7 +381,12 @@
     <footer class="footer">
         <div class="conteiner conteiner__footer">
             <header class="footer__nav nav">
-                <div class="nav__logo logo"></div>                    
+                <a class="nav__logo logo">
+                    <picture>                       
+                        <source media="(min-width: 768px)" srcset="./img/logo-desktop.png" width="170">
+                        <img src="img/logo-tablet.png" width="82" height="36" alt="логотип drink2go">
+                    </picture> 
+                </a>                    
                     <span class="nav__logo-text">Интернет-магазин кофейных напитков</span>                
                 <nav class="nav__social social">
                 <ul class="social__list">
@@ -420,9 +451,7 @@
                             </g>
                         </svg>
                     </a>
-                </div>
-        
-    
+                </div>    
     </footer>
 
     <template id="balloon">
@@ -432,5 +461,8 @@
     </template>
 
     <script src="./libers/nouislider.min.js"></script>
+    <!--swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
 </body>
 </html>

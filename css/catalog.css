@@ -1,14 +1,18 @@
 .catalog__wrapper {
     margin-top: 16px;
 }
-.catalog__wrapper label{
+.catalog__select{
+    display: flex;
+    justify-content: center;
+}
+.catalog__select label{
     font-size: 16px;
     font-family: Montserrat;
     font-weight: 600;
     line-height: 24px;
-    margin-left: 10%;    
+    margin-left: 0 ;    
 }
-.catalog__wrapper select{
+.catalog__select select{
     color:#7859CF;
     text-align: right;
     font-size: 16px;
@@ -17,22 +21,21 @@
     line-height: 24px;
     border: none;   
 }
-.catalog__wrapper select:hover,.catalog__wrapper:focus{
+.catalog__select select:hover,.catalog__select:focus{
     background-color: #F0EBFF;
 }
-.catalog__wrapper option{
+.catalog__select option{
     background-color: #FFFFFF;
     border: none;
     color: #333333;
 }
-.catalog__wrapper option:hover{
+.catalog__select option:hover{
     background-color: #7859CF;
     border: none;
     color: #333333;
 }
-.catalog__wrapper select:active{
-    background-color: #7859CF;
-    
+.catalog__select select:active{
+    background-color: #7859CF;    
 }
 .catalog__list {
     display: flex;

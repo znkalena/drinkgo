@@ -1,0 +1,22 @@
+
+.swiper-pagination-bullet {    
+    width: 62px;
+    height: 4px;
+    border-radius: 0;
+    background: #ffffff;
+    opacity: 1;
+}
+.swiper-pagination-bullet:hover,.swiper-pagination-bullet:focus{
+    background-color: #9070EC;
+}
+.swiper-pagination-bullet:disabled{
+    background-color: #E2E2E2;    
+}
+.swiper-pagination-bullet-active {
+    background-color: #593CAC;
+}
+@media (max-width:1200px){
+.swiper-pagination {
+    display: none;
+}    
+}

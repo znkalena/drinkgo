@@ -4,6 +4,9 @@ new Swiper('.promo__slider', {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
     },    
     autoPlay:{
         delay:3000,

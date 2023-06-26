@@ -26,10 +26,13 @@
     text-decoration: none;
     color: #333333;
 }
-.user__link:hover .user__svg path,.user__link:focus .user__svg path{
+.user__item:hover  .user__svg path{
     fill: #7859CF;
 }
-.user__link:active .user__svg path{
+.user__item:focus  .user__svg path{
+    fill: #7859CF;
+}
+.user__item:active .user__svg path{
     fill:#7859CF ;
 }
 .user__item:active{

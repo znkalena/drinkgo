@@ -1,0 +1,1 @@
+export const createPopup=e=>{const o=document.querySelector("#balloon").content.querySelector(".balloon").cloneNode(!0);return o.querySelector(".balloon__lat-lng").textContent=`Координаты: ${e.lat},${e.lng}`,o};

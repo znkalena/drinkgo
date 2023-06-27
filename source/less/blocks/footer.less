@@ -1,0 +1,219 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;   
+}
+.conteiner {    
+    padding: 0 20px 12px;
+}
+.footer__nav {
+    display: flex;    
+    gap:38px ;
+    margin-bottom: 20px;
+}
+.nav__logo{
+    width: 82px;
+    height: 36px;    
+    @media (min-resolution: 2dppx) {
+        background-image: url(../img/logo-tablet@2x.png);
+    }
+}
+.social__list {
+    margin: 0 0 29px;
+    display: flex;
+    gap: 20px;    
+}
+.social__item {
+    display: inline-flex;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;     
+}
+.social__link{
+    width: 20px;
+    height: 20px;
+}
+.social__link-vk{    
+    background-image: url(../../img/vk.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+.social__link-vk:hover{
+    background-image: url(../../img/vk-colored.svg);    
+}
+.social__link-ok{   
+    background-image: url(../../img/ok.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+.social__link-ok:hover{
+    background-image: url(../../img/ok-colored.svg);    
+}
+.social__link-pin{   
+    background-image: url(../../img/pinter.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+.social__link-pin:hover{
+    background-image: url(../../img/pin-colored.svg);    
+}
+.social__link:active +.social__item{
+    background-color: #7859CF;
+    opacity: 0.75;
+}
+.footer__lists {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.footerlist{
+    border-bottom: 1px dashed #F0EBFF;        
+}
+.footerlist__title{
+    color:#7859CF;
+    font-size: 14px;    
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.28px;
+    margin: 0;
+}
+.footerlist__item{
+    display: inline-flex;
+    padding: 8px 0px;
+    align-items: flex-start;
+    gap: 10px;
+}
+.footerlist__link {
+    color: #333;
+    font-size: 12px;    
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.footerlist__link:hover,.footerlist__link:focus{
+    color:#9070EC ;
+}
+.footerlist__link:active{
+    color: #593CAC;
+}
+.footerlist__item-adress{    
+    padding-left: 20px;
+    background-image: url(../../img/address.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 13px;
+}
+.footerlist__item-tel{
+    padding-left: 20px;
+    background-image: url(../../img/phone.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size:13px ;
+}
+.footer__copyrait {
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.copyrait__text {
+    color: #BDBDBD;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;    
+}
+.copyrait__link {
+    text-decoration: none;
+    color:#BDBDBD;    
+    font-size: 12px;    
+    line-height: 16px;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 4px;      
+}
+.copyrait__link:hover{
+    color: #7859CF;
+}
+.copyrait__link:focus{
+    color: #7859CF;
+}
+.copyrait__link:active{
+    color: #593CAC;
+}
+.nav__logo-text{
+    display: none;
+}
+
+@media (min-width:680px) {
+    .footer__nav {
+        display: flex;    
+        justify-content: space-between;
+        margin-bottom: 32px;
+    }
+    .nav__logo{
+        width: 170px;
+        height: 36px;        
+            @media (min-resolution: 2dppx) {
+            background-image: url(../../img/logo-desctop@2x.png);
+        }
+    }   
+    
+    .footer__lists {
+        display: flex;
+        flex-direction: row;        
+        margin-bottom: 30px;
+    }
+    .footerlist{
+        flex-basis: 33%;
+        display: flex;
+        flex-direction: column;
+    }    
+    .footer__copyrait {
+        display: flex;
+        gap: 3px;
+        justify-content: center;
+    } 
+    .footerlist__item-adress{
+        max-width: 204px;
+    }   
+}
+@media (min-width:1200px) {
+    .conteiner__footer{
+        display: flex;
+        gap: 30px;        
+    }
+    .footer__nav {
+        flex-basis: 25%;        
+        display:inline-block;        
+    }
+    .nav__logo{       
+        padding-top: 66px;        
+    }   
+    
+    .footer__lists {             
+        margin-bottom: 20px;
+        flex-grow: 1;
+    }
+    .footerlist{        
+        flex-basis: 25%; 
+        gap: 4px;       
+    } 
+    .footerlist__title{
+        margin-bottom: 12px;
+    }  
+    .nav__logo-text{
+        display:block;
+        padding: 0;
+        margin: 0 0 60px;
+    }
+    .social__list{
+        margin: 0;
+    } 
+    .footerlist__item-adress{
+        max-width: 294px;
+    }    
+}

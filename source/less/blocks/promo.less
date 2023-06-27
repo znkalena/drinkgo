@@ -1,0 +1,202 @@
+.promo{
+    background-color: #F3EBE1;    
+}
+.slider__block{    
+    height: 100%;
+    position: relative; 
+}
+.promo__conteiner{    
+    margin-bottom: 50px;    
+    height: 656px;    
+}
+.slider__button{       
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height:350px;    
+}
+.slider__button:active{
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0.00) 100%);    
+}
+
+.block__img{
+    width: 280px;
+    height: 280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin:20px auto 30px;
+}
+.block__img-white{
+    background-image: url(../../img/flat-white.png);    
+}
+.block__img-lavande{
+    background-image: url(../../img/lavender.png);
+}
+.block__img-espresso{
+    background-image: url(../../img/espresso.png);
+}
+.block__title{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.72px;
+    padding: 0;
+    margin: 0 auto;
+}
+.block__description{
+    width: 280px;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+}
+.block__price{
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.price__span{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    border:1px solid #7859CF ;
+    color:#333;
+    font-size: 20px;    
+    font-weight: 600;
+    line-height: 32px;        
+}
+.price__span-old{
+    color:#7859CF;
+    font-size: 16px;    
+    line-height: 32px;
+    font-weight: 400;
+    text-decoration:line-through;
+    border: none;
+}
+.price__btn{
+    display: inline-flex;
+    padding: 8px 20px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    background:#7859CF;
+    color:#FFF;
+    text-align: center;
+    font-size: 16px;
+    font-family: Montserrat;
+    line-height: 24px;
+    margin-left: 14px;
+    cursor: pointer;
+}
+.price__btn:hover,.price__btn:focus{
+    background-color: #9070EC;
+}
+.price__btn:active{
+    background-color: #593CAC;
+}
+.price__btn:disabled{
+    background-color: #BDBDBD;
+}
+.slider__pagination{
+    display: none;
+}
+
+
+@media (min-width:680px) {
+    .slider__block{    
+        height: 100%;
+        position: relative; 
+    }
+    .promo__conteiner{    
+        margin-bottom:248px;    
+        height: 640px;    
+    }
+    .slider__block{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .block__img{       
+        width: 476px;
+        height: 476px;              
+        margin:40px auto 0;
+    }
+    .block__img-white{
+        background-image: url(../../img/flat-white.png);            
+    }
+    .block__title{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        text-align: center;
+        font-size: 56px;        
+        line-height: 80px;
+        letter-spacing: 1.12px;
+        padding: 0;
+        margin: 60px 0 16px 0;
+    }
+    .block__description{
+        width: 608px;           
+        font-size: 20px;        
+        line-height: 32px;
+        padding: 0;       
+    }   
+}
+@media (min-width:1200px) {
+    .promo__conteiner{    
+        margin-bottom: 100px;    
+        height: 714px;    
+    }   
+    .slider__block{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    .block__img{       
+        width: 600px;
+        height: 600px;              
+        margin:30px 0 3px 25px;
+    }
+    .block__img-white{
+        background-image: url(../../img/flat-desktop.png);    
+    }
+    .block__img-lavande{
+        background-image: url(../../img/lavender-desctop.png);
+    }
+    .block__img-espresso{
+        background-image: url(../../img/espresso-desctop.png);
+    }
+    .block__title{        
+        margin: 180px 0 16px 0;
+    }
+    .block__description{
+        width: 625px;        
+    }
+    .block__price{
+        margin-top: 40px;
+    }
+    .slider__pagination{
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;        
+    } 
+    .pagin__item{
+        width: 62px;
+        height: 24px;
+        background-image: url(../../img/slider-step.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .pagin__item-active{
+        background-image: url(../../img/step-aktive.svg);
+    }  
+}
